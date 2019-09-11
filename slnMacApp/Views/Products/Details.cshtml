@@ -1,0 +1,42 @@
+﻿@model slnMacApp.Models.Product
+
+@{
+    ViewBag.Title = "Product Details";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<table class="table">
+    <tr>
+        <th>Product ID</th>
+        <td>@Model.ProductID</td>
+    </tr>
+    <tr>
+        <th>Product Name</th>
+        <td>@Model.ProductName</td>
+    </tr>
+    <tr>
+        <th>Price</th>
+        <td>@Model.Price</td>
+    </tr>
+    <tr>
+        <th>Date of Purchase</th>
+        <td>@Model.DateOfPurchase</td>
+    </tr>
+    <tr>
+        <th>Availability Status</th>
+        <td>@Model.AvailabilityStatus</td>
+    </tr>
+    <tr>
+        <th>Category ID</th>
+        <td>@Model.CategoryID</td>
+    </tr>
+    <tr>
+        <th>Brand ID</th>
+        <td>@Model.BrandID</td>
+    </tr>
+    <tr>
+        <th>Active</th>
+        <td>@Model.Active</td>
+    </tr>
+</table>
+<td><a href="/Products/Index" class="btn-link">Back to Products</a></td>
